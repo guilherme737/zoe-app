@@ -1,3 +1,4 @@
+import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -5,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UsuarioModule } from './usuario/usuario.module';
 import { AppRoutingModule } from './/app-routing.module';
+import { NavSidebarComponent } from './nav-sidebar/nav-sidebar.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -12,11 +15,13 @@ import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent    
+    AppComponent, 
+    NavSidebarComponent   
   ],
   imports: [
     BrowserModule,
-    UsuarioModule,
+    UsuarioModule,    
+    DashboardModule,
     AppRoutingModule    
   ],
   providers: [],
