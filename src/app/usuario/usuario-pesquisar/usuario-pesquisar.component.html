@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-colorful">
+            <div class="panel-heading ui-draggable-handle">
+                <h3 class="panel-title">Pesquisa de Usuário</h3>
+            </div>
+            <div class="panel-body">
+                <p-table [value]="cars">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>Vin</th>
+                            <th>Year</th>
+                            <th>Brand</th>
+                            <th>Color</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-car>
+                        <tr>
+                            <td>{{car.vin}}</td>
+                            <td>{{car.year}}</td>
+                            <td>{{car.brand}}</td>
+                            <td>{{car.color}}</td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>    
+</div>    

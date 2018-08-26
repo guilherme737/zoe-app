@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { UsuarioModule } from './usuario/usuario.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { AppRoutingModule } from './/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     UsuarioModule,      
     DashboardModule,
     AppRoutingModule    
